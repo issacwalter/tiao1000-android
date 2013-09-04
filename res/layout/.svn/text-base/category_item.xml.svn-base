@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:layout_marginTop="3dp"
+    android:orientation="horizontal" >
+    
+	<com.zdmddd.view.category.CategoryButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/big_btn"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/plaza_new"
+            android:visibility="invisible"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"/>
+    </com.zdmddd.view.category.CategoryButton>
+    <com.zdmddd.view.category.CategoryButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:background="@drawable/big_btn"
+        android:visibility="invisible">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/plaza_hot"
+            android:visibility="invisible"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"/>
+    </com.zdmddd.view.category.CategoryButton>
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0" >
+    
+    <!-- 顶部标题 -->
+    <FrameLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/attention_daren_box"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:orientation="horizontal">
+	    
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/show_menu_button_click"
+            android:id="@+id/show_menu"/>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/tiao1000_40"/>
+            <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="5dp"
+		        android:textSize="20sp"
+		        android:text="@string/hot"
+		        android:id="@+id/title"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/down"
+                android:id="@+id/up_down"/>
+        </LinearLayout>
+	    
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left|center_vertical"
+	        android:background="@drawable/search_icon"
+	        android:id="@+id/search"/>
+	</FrameLayout>
+	
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:id="@+id/page_view_container">
+	        
+            <com.zdmddd.view.page.FirstPageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:id="@+id/first_page"/>
+            <com.zdmddd.view.page.LikePageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:visibility="gone"
+		        android:id="@+id/like_page"/>
+            <com.zdmddd.view.page.FavorPageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:visibility="gone"
+		        android:id="@+id/favor_page"/>
+            <com.zdmddd.view.page.SharePageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:visibility="gone"
+		        android:id="@+id/share_page"/>
+            <com.zdmddd.view.page.HotPageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:visibility="gone"
+		        android:id="@+id/hot_page"/>
+            <com.zdmddd.view.page.CategoryPageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:visibility="gone"
+		        android:id="@+id/category_page"/>
+            <com.zdmddd.view.page.AboutPageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:visibility="gone"
+		        android:id="@+id/about_page"/>
+        </LinearLayout>
+        
+        <com.zdmddd.view.MenuView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/menu"/>
+        
+    </FrameLayout>
+</LinearLayout>

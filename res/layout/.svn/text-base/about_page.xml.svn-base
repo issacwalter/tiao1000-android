@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:orientation="vertical">
+       
+	<ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginBottom="20dp"
+	    android:contentDescription="@string/app_name"
+	    android:src="@drawable/tiao1000"/>
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:textSize="20sp"
+	    android:text="@string/zdmddd"/>
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="100dp"
+	    android:textSize="12sp"
+	    android:text="值得买的东东 Android版"/>
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="15dp"
+	    android:textSize="12sp"
+	    android:id="@+id/version"
+	    android:text=""/>
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="15dp"
+	    android:gravity="center"
+	    android:textSize="12sp"
+	    android:text="© 2011 - 2012 值得买的东东.渝ICP备13003216号-1"/>
+</LinearLayout>

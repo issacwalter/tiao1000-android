@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 除MainActivity之外的标题 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/title"
+    android:background="@drawable/attention_daren_box">
+    
+    <TextView 
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_gravity="center"
+	     android:gravity="center"
+	     android:textSize="20sp"
+	     android:id="@+id/title_text"/>
+    <Button 
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_gravity="left|center_vertical"
+	     android:id="@+id/back_button"
+	     android:background="@drawable/btn_image_veiw_page_back"/>
+</FrameLayout>

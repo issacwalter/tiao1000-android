@@ -1,0 +1,22 @@
+package com.zdmddd.view;
+
+import android.content.Context;
+import android.view.Display;
+import android.view.WindowManager;
+
+/**
+ * 获取设备相关信息
+ * */
+public class ZLDevice {
+	public static int getSDKVersion(){
+		return android.os.Build.VERSION.SDK_INT;
+	}
+	public static int getScreenWidth(Context context){
+		Display dsp = ((WindowManager)context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+		return dsp.getWidth();
+	}
+	public static int getScreenHeight(Context context){
+		Display dsp = ((WindowManager)context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+		return dsp.getHeight();
+	}
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+        <ViewFlipper 
+	        android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+	        android:measureAllChildren="true"
+	        android:id="@+id/viewFlipper">
+	    </ViewFlipper>
+	    
+	    <!-- <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"
+	        android:orientation="horizontal"
+	        android:background="#00000000">
+	        <Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="#66000000"
+	            android:textColor="#ffffff"
+	            android:padding="10dp"
+	            android:text="@string/pre_blog"
+	            android:id="@+id/pre_blog"/>
+	        <Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="3dp"
+	            android:background="#66000000"
+	            android:textColor="#ffffff"
+	            android:padding="10dp"
+	            android:text="@string/next_blog"
+	            android:id="@+id/next_blog"/>
+	    </LinearLayout> -->
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#444444"
+        android:orientation="horizontal">
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/comment"
+            android:text="@string/comment"
+            android:textColor="#F7F5F5"
+            android:background="@drawable/main_tool_bar_button"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/like"
+            android:text="@string/like"
+            android:textColor="#F7F5F5"
+            android:background="@drawable/main_tool_bar_button"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/forward"
+            android:text="@string/forward"
+            android:textColor="#F7F5F5"
+            android:background="@drawable/main_tool_bar_button"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/buy"
+            android:text="@string/buy"
+            android:textColor="#F7F5F5"
+            android:background="@drawable/main_tool_bar_button" />
+    </LinearLayout>
+    
+</LinearLayout>

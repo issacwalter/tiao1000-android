@@ -1,0 +1,56 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <zl.android.view.PushDownRefreshView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/down_refresh"/>
+        <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false"
+	        android:orientation="horizontal">
+	        
+		    <com.zdmddd.view.plaza.component.PlazaLinearLayout 
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:orientation="vertical"
+		        android:id="@+id/left">
+		        
+		    </com.zdmddd.view.plaza.component.PlazaLinearLayout>
+		    <com.zdmddd.view.plaza.component.PlazaLinearLayout 
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:orientation="vertical"
+		        android:id="@+id/center">
+		        
+		    </com.zdmddd.view.plaza.component.PlazaLinearLayout>
+		    <com.zdmddd.view.plaza.component.PlazaLinearLayout 
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:orientation="vertical"
+		        android:id="@+id/right">
+		        
+		    </com.zdmddd.view.plaza.component.PlazaLinearLayout>
+		</LinearLayout>
+	
+	    <TextView
+	        android:id="@+id/load_more"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/loading" />
+    </LinearLayout>
+</ScrollView>
